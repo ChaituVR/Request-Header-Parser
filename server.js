@@ -26,6 +26,9 @@ app.get('/api/whoami', function (req, res) {
   
 
 });
+app.get('/', function (req, res) {
+  res.send("<p>Please go to - - <code>https://mysterious-eyrie-34965.herokuapp.com/api/whoami</code></h1><br><br><br> <b> Source code is available at https://github.com/ChaituVR/Request-Header-Parser</b>");
+});
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
